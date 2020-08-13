@@ -1,0 +1,81 @@
+<head>
+  	<title>Raksix</title>
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#14bae4">
+    <meta content="assets/profile.jpg" property="og:image" />
+    <link rel="icon" type="image/x-icon" href="https://discordapp.com/assets/5c1ddcf25e62845a09ddaedb534eb028.svg">
+    <meta content="Raksix" property="og:title" />
+    <meta content="Kişisel Websitem" property="og:description" />
+    <meta content="Kişisel Websitem" name="description " />
+    <meta name="revisit-after" content="2 days">
+    <meta name="keywords" content="Raksix, Twitter, Developer, Github, Raksix, Raksix Websitesi, Raksix Kimdir, Speakturk, Furkan, Yazılımcı, Mükemmel Site,">
+    <meta property="og:locale" content="tr_TR" />
+    <link rel="canonical" href="https://www.raksix.wtf/" />
+    <meta property="og:url" content="https://www.raksix.wtf/" />
+    <meta property="og:site_name" content="Raksix" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@Raksix" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<style>
+@font-face { font-family: roboto-regular; 
+			 src: url('https://cdn.glitch.com/e6077783-1b4b-4c93-befe-f8cb06281c7c%2FGravity-Regular.otf?v=1597321984554'); } 
+body{
+	font-family: roboto-regular;
+  font-size: 20px;
+    background-color: #333;
+
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" style="font-size: 25px;" href="/">Raksix</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Anasayfa</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  
+  <div class="bosluk">
+    
+  </div>
+
+
+  <div class="container">
+<div class="row row-cols-1">
+   <% ürünler.forEach(function(x) { %>
+
+  <div class="col-sm-4">
+    <div class="card">
+      <img src="<%- x.ürün_resim %>" class="card-img-top" >
+      <div class="card-body">
+        <h5 class="card-title"><%- x.ürün_adi %></h5>
+        <p class="card-text"><%- x.ürün_bilgi %></p>
+        <a href="/satinal/<%- x.ürün_id %>" class="btn btn-primary">Satın al</a>
+      </div>
+    </div>
+      <div class="bosluk">
+    
+  </div>
+  </div>  
+  
+  <% }); %>
+
+</div>
+
+</div>
+</body>
