@@ -1,4 +1,4 @@
 # kod-sat-m-sitesi
 Json Tabanlı Kod Satma Sitesi
 
-Kodla Karışık olabilir kusura bakanın amk
+Kodlar karışık olabilir kusura bakanın amk
